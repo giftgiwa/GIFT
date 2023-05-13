@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+html {
+    overflow-x:hidden;
+}
+
+.headings {
+    font-family: Menlo;
+    font-weight: 400;
+    font-size: 48px;
+    background: linear-gradient(90deg, #FFE600, #00FBFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index:9;
+    width: auto;
+    position: relative;
+    padding:20px;
+    padding-top:70px;
+    margin:0;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+span::selection {
+    background:#fff;
+    color: #1c1c1c;
+}
+
+#canvas {
+    position:fixed;
+    z-index:1;
+    width: 100vw;
+    height: 100vh;  
+}
+
+.body {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    display:block;
+    font-size: 16px;
+    z-index: 8;
+}
+
+.body::selection {
+    background:#fff;
+    color: #1c1c1c;
+}
+
+.horizontal-center {
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    pointer-events: auto; 
+}
+
+h4 {
+    font-family: Menlo;
+    font-size:24px;
+    padding-left:20px;
+    position:relative;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+li {
+    margin-left:15px;
+    padding:10px;
+    color:#c0c0c0;
+    font-family: Menlo;
+    text-decoration:none;
+    font-size:14px;
+}
+
+ul > li {
+    display: inline-block;
+}
+
+/* Responsive Design Rules */
+
+@media only screen and (max-width: 1350px) {
+    .headings {
+        position:relative;
+        left: 50%;
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        white-space:nowrap;
+    }
+}
