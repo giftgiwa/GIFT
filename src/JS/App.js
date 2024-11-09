@@ -8,6 +8,7 @@ import Navbar from "./Components/navbar"
 import Spheres from "./Components/spheres"
 import DecoBars from "./Components/deco_bars"
 import Frost from "./Components/frost"
+import WIP from "./Components/WIP"
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
 
   return (
     <>
-      <div onClick = {handleClick}>
+      {/* <div onClick = {handleClick}>
         <Page />
       </div>
       {showComponent && 
@@ -36,7 +37,8 @@ function App() {
         <Experience />
         <MyCreations />
         <Credits />
-      </>}
+      </>} */}
+      <WIP />
     </>
   )
 

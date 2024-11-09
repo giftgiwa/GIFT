@@ -1,5 +1,6 @@
 import React from "react"
 import "../../CSS/start_page.css"
+import WIP from "../Components/WIP"
 
 function Page() {
     

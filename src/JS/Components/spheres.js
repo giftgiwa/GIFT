@@ -34,7 +34,7 @@ class Spheres extends Component {
 		// use ref as a mount point of the Three.js scene instead of the document.body
 		this.mount.appendChild( renderer.domElement )
 
-		const geometry = new THREE.SphereGeometry(5, 40, 20)
+		const geometry = new THREE.SphereGeometry(5, 20, 15)
 
 		// "glass"
 		const sphereMaterial = new THREE.MeshPhysicalMaterial({
@@ -92,9 +92,9 @@ class Spheres extends Component {
 
 			requestAnimationFrame( animate );
 
-			time += 0.001
+			time += 0.1
 
-			matrix.makeRotationY(0.025 * 2 * Math.PI / period)
+			matrix.makeRotationY(0.01 * 2 * Math.PI / period)
 
 			camera.lookAt(new THREE.Vector3(0, 0, 0)) //keep camera looking at center of scene
 			camera.position.applyMatrix4(matrix)
